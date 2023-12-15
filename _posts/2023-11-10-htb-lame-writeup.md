@@ -3,6 +3,7 @@ title: "HackTheBox: Lame Write-Up"
 date: 2023-11-10 15:35
 categories: [HackTheBox, Machines]
 tags: [windows, smb, metasploit, nmap]
+img_path: /htb/machines/lame/
 ---
 
 As I am still new in the world of cybersecurity and penetration testing, I want to document my progress on my learning. I will be starting with this write-up of the Lame machine on HackTheBox, showing my approach and thought process while pwning it.
@@ -63,23 +64,23 @@ The ports are associated with the services FTP, SSH, and SMB. As it seems that a
 
 Next, I had a look at the shares exposed by SMB.
 
-![SMB Shares](/htb/machines/lame/smb-shares.png)
+![SMB Shares](smb-shares.png)
 
 The _tmp_ share looked interesting so I connected to it. But I did not find anything of interest.
 
-![SMB tmp directories](/htb/machines/lame/smb-tmp-directories.png)
+![SMB tmp directories](smb-tmp-directories.png)
 
 When I took another look at the output of the share listing, I noticed that Samba 3.0.20 is being used. Then, I searched the Internet for vulnerabilities for this particular version of Samba. I discovered that it has the CVE number [CVE-2007-2447](https://nvd.nist.gov/vuln/detail/CVE-2007-2447) as well as a [Metasploit module](https://www.exploit-db.com/exploits/16320) which gives us an immediate root shell.
 
 Afterwards, I quickly started Metasploit and searched for Samba and set the necessary options.
 
-![Metasploit Options](/htb/machines/lame/metasploit-options.png)
+![Metasploit Options](metasploit-options.png)
 
 > You still need to set the LHOST option to the IP address of your tun0 interface.
 {: .prompt-info}
 
 After running the exploit, you have access to a reverse shell as the root user.
 
-![Metasploit Reverse Shell](/htb/machines/lame/metasploit-reverse-shell.png)
+![Metasploit Reverse Shell](metasploit-reverse-shell.png)
 
 You can find the two flags at /home/makis/user.txt and /root/root.txt, respectively.
