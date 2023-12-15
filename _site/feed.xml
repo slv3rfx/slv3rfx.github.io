@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>slv3rfx</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2023-12-14T21:23:21+01:00</updated>
+  <updated>2023-12-15T16:20:27+01:00</updated>
   <author>
     <name>Marcel Schmitt</name>
     <uri>http://localhost:4000/</uri>
@@ -17,6 +17,129 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>HackTheBox: Jerry Write-Up</title>
+    <link href="http://localhost:4000/posts/htb-jerry-writeup/" rel="alternate" type="text/html" title="HackTheBox: Jerry Write-Up" />
+    <published>2023-11-12T12:55:00+01:00</published>
+  
+    <updated>2023-11-12T12:55:00+01:00</updated>
+  
+    <id>http://localhost:4000/posts/htb-jerry-writeup/</id>
+    <content src="http://localhost:4000/posts/htb-jerry-writeup/" />
+    <author>
+      <name>Marcel Schmitt</name>
+    </author>
+
+  
+    
+    <category term="HackTheBox" />
+    
+    <category term="Machines" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      Jerry is an easy-rated Windows machine on HTB that can teach you some basics of proper enumeration, searching for exploits on the Internet, and brute-forcing valid credentials for protected pages.
+
+Enumeration
+
+Let’s start by enumerating the target with a standard nmap scan.
+
+$ nmap -oA scans/nmap_initial -Pn 10.10.10.95
+
+
+
+
+We can see that there is a web server running on port 8080. Let’s do a...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>HackTheBox: Lame Write-Up</title>
+    <link href="http://localhost:4000/posts/htb-lame-writeup/" rel="alternate" type="text/html" title="HackTheBox: Lame Write-Up" />
+    <published>2023-11-10T15:35:00+01:00</published>
+  
+    <updated>2023-11-10T15:35:00+01:00</updated>
+  
+    <id>http://localhost:4000/posts/htb-lame-writeup/</id>
+    <content src="http://localhost:4000/posts/htb-lame-writeup/" />
+    <author>
+      <name>Marcel Schmitt</name>
+    </author>
+
+  
+    
+    <category term="HackTheBox" />
+    
+    <category term="Machines" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      As I am still new in the world of cybersecurity and penetration testing, I want to document my progress on my learning. I will be starting with this write-up of the Lame machine on HackTheBox, showing my approach and thought process while pwning it.
+
+First, I started with a typical nmap scan. Since nmap’s ping packets seem to get blocked, I had to add the Pn switch to tell nmap to scan the port...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>Mastering Sequence Filtering in Python: Comprehensive Guide to Effective Filtering Techniques</title>
+    <link href="http://localhost:4000/posts/python-sequence-filtering/" rel="alternate" type="text/html" title="Mastering Sequence Filtering in Python: Comprehensive Guide to Effective Filtering Techniques" />
+    <published>2023-07-19T15:35:00+02:00</published>
+  
+    <updated>2023-07-19T15:35:00+02:00</updated>
+  
+    <id>http://localhost:4000/posts/python-sequence-filtering/</id>
+    <content src="http://localhost:4000/posts/python-sequence-filtering/" />
+    <author>
+      <name>Marcel Schmitt</name>
+    </author>
+
+  
+    
+    <category term="Programming" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      Filtering sequences, like lists, is a common task for developers. However, the code can become verbose and challenging to read, depending on the complexity of the filtering conditions. In this article, we’ll explore techniques Python offers to filter sequences effectively.
+
+Using For Loop
+
+This technique can be applied to any programming language. It serves as a universal approach to sequence f...
+    </summary>
+  
+
+  </entry>
 
 </feed>
 

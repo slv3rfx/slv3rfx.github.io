@@ -46,6 +46,8 @@ const allowedDomains = [
   'localhost:4000',
 
   
+    'slv3rfx-blog-assets.b-cdn.net',
+  
 
   'fonts.gstatic.com',
   'fonts.googleapis.com',

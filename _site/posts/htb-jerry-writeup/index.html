@@ -35,23 +35,24 @@
   
     <!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.2" />
-<meta property="og:title" content="slv3rfx" />
+<meta property="og:title" content="HackTheBox: Jerry Write-Up" />
 <meta property="og:locale" content="en" />
-<meta name="description" content="A minimal, responsive and feature-rich Jekyll theme for technical writing." />
-<meta property="og:description" content="A minimal, responsive and feature-rich Jekyll theme for technical writing." />
-<link rel="canonical" href="http://localhost:4000/" />
-<meta property="og:url" content="http://localhost:4000/" />
+<meta name="description" content="Jerry is an easy-rated Windows machine on HTB that can teach you some basics of proper enumeration, searching for exploits on the Internet, and brute-forcing valid credentials for protected pages." />
+<meta property="og:description" content="Jerry is an easy-rated Windows machine on HTB that can teach you some basics of proper enumeration, searching for exploits on the Internet, and brute-forcing valid credentials for protected pages." />
+<link rel="canonical" href="http://localhost:4000/posts/htb-jerry-writeup/" />
+<meta property="og:url" content="http://localhost:4000/posts/htb-jerry-writeup/" />
 <meta property="og:site_name" content="slv3rfx" />
-<meta property="og:type" content="website" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2023-11-12T12:55:00+01:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="slv3rfx" />
+<meta property="twitter:title" content="HackTheBox: Jerry Write-Up" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebSite","description":"A minimal, responsive and feature-rich Jekyll theme for technical writing.","headline":"slv3rfx","name":"Marcel Schmitt","sameAs":["https://github.com/slv3rfx","https://www.linkedin.com/in/schmittmarcel"],"url":"http://localhost:4000/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-11-12T12:55:00+01:00","datePublished":"2023-11-12T12:55:00+01:00","description":"Jerry is an easy-rated Windows machine on HTB that can teach you some basics of proper enumeration, searching for exploits on the Internet, and brute-forcing valid credentials for protected pages.","headline":"HackTheBox: Jerry Write-Up","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/htb-jerry-writeup/"},"url":"http://localhost:4000/posts/htb-jerry-writeup/"}</script>
 <!-- End Jekyll SEO tag -->
 
   
 
-  <title>slv3rfx
+  <title>HackTheBox: Jerry Write-Up | slv3rfx
   </title>
 
   <!--
@@ -103,11 +104,16 @@
   <link rel="stylesheet" href="/assets/css/jekyll-theme-chirpy.css">
 
   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tocbot@4.21.3/dist/tocbot.min.css">
+  
 
   
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/loading-attribute-polyfill@2.1.1/dist/loading-attribute-polyfill.min.css">
   
 
+  
+    <!-- Manific Popup -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/magnific-popup@1.1.0/dist/magnific-popup.min.css">
   
 
   <!-- JavaScript -->
@@ -286,7 +292,7 @@
   <nav class="flex-column flex-grow-1 w-100 ps-0">
     <ul class="nav">
       <!-- home -->
-      <li class="nav-item active">
+      <li class="nav-item">
         <a href="/" class="nav-link">
           <i class="fa-fw fas fa-home"></i>
           <span>HOME</span>
@@ -414,9 +420,25 @@
       
 
       
-        <!-- index page -->
-        <span>Home</span>
+        
+          
+            <span>
+              <a href="/">
+                Home
+              </a>
+            </span>
 
+          
+        
+          
+        
+          
+            
+              <span>HackTheBox: Jerry Write-Up</span>
+            
+
+          
+        
       
     </nav>
     <!-- endof #breadcrumb -->
@@ -426,7 +448,7 @@
     </button>
 
     <div id="topbar-title">
-      slv3rfx
+      Post
     </div>
 
     <button type="button" id="search-trigger" class="btn btn-link">
@@ -480,6 +502,400 @@
 
 
 
+  
+  
+
+  <!-- CDN URL -->
+  
+
+  <!-- Add image path -->
+  
+
+  
+    
+      
+      
+    
+
+    
+    
+
+    
+
+    
+    
+
+    
+    
+    
+
+    
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+      
+
+      
+    
+
+    <!-- take out classes -->
+    
+
+    
+    
+
+    
+
+    
+      
+    
+
+    <!-- lazy-load images -->
+    
+
+    
+      <!-- make sure the `<img>` is wrapped by `<a>` -->
+      
+
+      
+        <!-- create the image wrapper -->
+        
+
+        
+        
+      
+    
+
+    <!-- combine -->
+    
+  
+    
+
+    
+    
+
+    
+
+    
+    
+
+    
+    
+    
+
+    
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+      
+
+      
+    
+
+    <!-- take out classes -->
+    
+
+    
+    
+
+    
+
+    
+      
+    
+
+    <!-- lazy-load images -->
+    
+
+    
+      <!-- make sure the `<img>` is wrapped by `<a>` -->
+      
+
+      
+        <!-- create the image wrapper -->
+        
+
+        
+        
+      
+    
+
+    <!-- combine -->
+    
+  
+    
+
+    
+    
+
+    
+
+    
+    
+
+    
+    
+    
+
+    
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+      
+
+      
+    
+
+    <!-- take out classes -->
+    
+
+    
+    
+
+    
+
+    
+      
+    
+
+    <!-- lazy-load images -->
+    
+
+    
+      <!-- make sure the `<img>` is wrapped by `<a>` -->
+      
+
+      
+        <!-- create the image wrapper -->
+        
+
+        
+        
+      
+    
+
+    <!-- combine -->
+    
+  
+    
+
+    
+    
+
+    
+
+    
+    
+
+    
+    
+    
+
+    
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+      
+
+      
+    
+
+    <!-- take out classes -->
+    
+
+    
+    
+
+    
+
+    
+      
+    
+
+    <!-- lazy-load images -->
+    
+
+    
+      <!-- make sure the `<img>` is wrapped by `<a>` -->
+      
+
+      
+        <!-- create the image wrapper -->
+        
+
+        
+        
+      
+    
+
+    <!-- combine -->
+    
+  
+    
+
+    
+    
+
+    
+
+    
+    
+
+    
+    
+    
+
+    
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+      
+
+      
+    
+
+    <!-- take out classes -->
+    
+
+    
+    
+
+    
+
+    
+      
+    
+
+    <!-- lazy-load images -->
+    
+
+    
+      <!-- make sure the `<img>` is wrapped by `<a>` -->
+      
+
+      
+        <!-- create the image wrapper -->
+        
+
+        
+        
+      
+    
+
+    <!-- combine -->
+    
+  
+    
+
+    
+    
+
+    
+
+    
+    
+
+    
+    
+    
+
+    
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+      
+
+      
+    
+
+    <!-- take out classes -->
+    
+
+    
+    
+
+    
+
+    
+      
+    
+
+    <!-- lazy-load images -->
+    
+
+    
+      <!-- make sure the `<img>` is wrapped by `<a>` -->
+      
+
+      
+        <!-- create the image wrapper -->
+        
+
+        
+        
+      
+    
+
+    <!-- combine -->
+    
+  
+
+  
+
 
 <!-- Add header for code snippets -->
 
@@ -494,6 +910,49 @@
   
   
 
+  
+    
+    
+
+    
+      
+        
+        
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+
+    
   
 
   
@@ -519,59 +978,15 @@
 
 
 
+<article class="px-1">
+  <header>
+    <h1 data-toc-skip>HackTheBox: Jerry Write-Up</h1>
 
-
-
-
-
-<!-- Get pinned posts -->
-
-
-
-
-
-
-<!-- Get default posts -->
-
-
-
-
-
-
-
-
-
-
-<div id="post-list" class="flex-grow-1 px-xl-1">
-  
-    <article class="card-wrapper card">
-      <a href="/posts/htb-jerry-writeup/" class="post-preview row g-0 flex-md-row-reverse">
-        
-
-        
-
-        <div class="col-md-12">
-          <div class="card-body d-flex flex-column">
-            <h1 class="card-title my-2 mt-md-0">HackTheBox: Jerry Write-Up</h1>
-
-            <div class="card-text content mt-0 mb-3">
-              <p>
-                
-
-
-
-
-
-                Jerry is an easy-rated Windows machine on HTB that can teach you some basics of proper enumeration, searching for exploits on the Internet, and brute-forcing valid credentials for protected pages.
-...
-              </p>
-            </div>
-
-            <div class="post-meta flex-grow-1 d-flex align-items-end">
-              <div class="me-auto">
-                <!-- posted date -->
-                <i class="far fa-calendar fa-fw me-1"></i>
-                <!--
+    <div class="post-meta text-muted">
+      <!-- published date -->
+      <span>
+        Posted
+        <!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -584,162 +999,242 @@
   data-ts="1699790100"
   data-df="ll"
   
+    data-bs-toggle="tooltip" data-bs-placement="bottom"
+  
 >
   Nov 12, 2023
 </time>
 
+      </span>
 
-                <!-- categories -->
-                
-                  <i class="far fa-folder-open fa-fw me-1"></i>
-                  <span class="categories">
-                    
-                      HackTheBox,
-                      Machines
-                  </span>
-                
-              </div>
+      <!-- lastmod date -->
+      
 
-              
-            </div>
-            <!-- .post-meta -->
-          </div>
-          <!-- .card-body -->
-        </div>
-      </a>
-    </article>
-  
-    <article class="card-wrapper card">
-      <a href="/posts/htb-lame-writeup/" class="post-preview row g-0 flex-md-row-reverse">
-        
+      
 
-        
+      <div class="d-flex justify-content-between">
+        <!-- author(s) -->
+        <span>
+          
 
-        <div class="col-md-12">
-          <div class="card-body d-flex flex-column">
-            <h1 class="card-title my-2 mt-md-0">HackTheBox: Lame Write-Up</h1>
+          By
 
-            <div class="card-text content mt-0 mb-3">
-              <p>
-                
+          <em>
+            
+              <a href="https://github.com/slv3rfx">Marcel Schmitt</a>
+            
+          </em>
+        </span>
+
+        <!-- read time -->
+        <!-- Calculate the post's reading time, and display the word count in tooltip -->
+
+
+
+<!-- words per minute -->
 
 
 
 
 
-                As I am still new in the world of cybersecurity and penetration testing, I want to document my progress on my learning. I will be starting with this write-up of the Lame machine on HackTheBox, show...
-              </p>
-            </div>
-
-            <div class="post-meta flex-grow-1 d-flex align-items-end">
-              <div class="me-auto">
-                <!-- posted date -->
-                <i class="far fa-calendar fa-fw me-1"></i>
-                <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
 
 
 
 
-<time
-  
-  data-ts="1699626900"
-  data-df="ll"
-  
+
+<!-- return element -->
+<span
+  class="readtime"
+  data-bs-toggle="tooltip"
+  data-bs-placement="bottom"
+  title="420 words"
 >
-  Nov 10, 2023
-</time>
+  <em>2 min</em> read</span>
 
+      </div>
+      <!-- .d-flex -->
+    </div>
+    <!-- .post-meta -->
+  </header>
 
-                <!-- categories -->
-                
-                  <i class="far fa-folder-open fa-fw me-1"></i>
-                  <span class="categories">
-                    
-                      HackTheBox,
-                      Machines
-                  </span>
-                
-              </div>
+  <div class="content">
+    <p>Jerry is an easy-rated Windows machine on HTB that can teach you some basics of proper enumeration, searching for exploits on the Internet, and brute-forcing valid credentials for protected pages.</p>
 
-              
-            </div>
-            <!-- .post-meta -->
-          </div>
-          <!-- .card-body -->
-        </div>
-      </a>
-    </article>
-  
-    <article class="card-wrapper card">
-      <a href="/posts/python-sequence-filtering/" class="post-preview row g-0 flex-md-row-reverse">
+<h2 id="enumeration"><span class="me-2">Enumeration</span><a href="#enumeration" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+
+<p>Let’s start by enumerating the target with a standard nmap scan.</p>
+
+<div class="language-console highlighter-rouge"><div class="code-header">
+        <span data-label-text="Console"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="gp">$</span><span class="w"> </span>nmap <span class="nt">-oA</span> scans/nmap_initial <span class="nt">-Pn</span> 10.10.10.95
+</pre></td></tr></tbody></table></code></div></div>
+
+<p><a href="https://slv3rfx-blog-assets.b-cdn.net/htb/machines/jerry/nmap-scan.png" class="popup img-link  shimmer"><img src="https://slv3rfx-blog-assets.b-cdn.net/htb/machines/jerry/nmap-scan.png" alt="Initial Nmap Scan" loading="lazy"></a></p>
+
+<p>We can see that there is a web server running on port 8080. Let’s do another scan for this port with the default scripts and service detection.</p>
+
+<div class="language-console highlighter-rouge"><div class="code-header">
+        <span data-label-text="Console"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="gp">$</span><span class="w"> </span>nmap <span class="nt">-oA</span> scans/nmap_scripts <span class="nt">-sV</span> <span class="nt">-sC</span> <span class="nt">-p</span> 8080 <span class="nt">-Pn</span> 10.10.10.95
+</pre></td></tr></tbody></table></code></div></div>
+
+<p><a href="https://slv3rfx-blog-assets.b-cdn.net/htb/machines/jerry/nmap-scripts.png" class="popup img-link  shimmer"><img src="https://slv3rfx-blog-assets.b-cdn.net/htb/machines/jerry/nmap-scripts.png" alt="Nmap Scripts" loading="lazy"></a></p>
+
+<p>Through the http title, we find out that it’s an Apache Tomcat server with the version 7.0.88.</p>
+
+<p>When we try to visit the website, we are presented with Tomcat’s default page saying that it was installed successfully. There, we can see two buttons that look interesting: “Manager App” and “Host Manager”. But we need credentials for both of them.</p>
+
+<p><a href="https://slv3rfx-blog-assets.b-cdn.net/htb/machines/jerry/tomcat-default-page.png" class="popup img-link  shimmer"><img src="https://slv3rfx-blog-assets.b-cdn.net/htb/machines/jerry/tomcat-default-page.png" alt="Tomcat Default Page" loading="lazy"></a></p>
+
+<p>When searching for exploits for this version of Tomcat, we also come across this HackTricks article. It describes how we can achieve Remote Code Execution (RCE) by uploading a malicious .war file. However, there is a catch: We first need to be able to access the Tomcat Web Application Manager. As we saw in the last step, we first have to find some valid credentials.</p>
+
+<h2 id="finding-valid-credentials"><span class="me-2">Finding Valid Credentials</span><a href="#finding-valid-credentials" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+
+<p>There are several possible ways we can go about finding the credentials we need. You could search on the Internet for standard Tomcat usernames and passwords. When you do this, you will find lists, like this or this. Trying them one by one manually would be one option. Another option would be to write a script yourself in your preferred language, iterating over the list and testing the validity of each pair. You could also use a tool such as Hydra.</p>
+
+<p>However, in our case, there is also a Metasploit module available so we’ll use that.</p>
+
+<p><a href="https://slv3rfx-blog-assets.b-cdn.net/htb/machines/jerry/metasploit-tomcat-scanner.png" class="popup img-link  shimmer"><img src="https://slv3rfx-blog-assets.b-cdn.net/htb/machines/jerry/metasploit-tomcat-scanner.png" alt="Metasploit Tomcat Scanner" loading="lazy"></a></p>
+
+<p>When we run this scanner, we will get one pair of valid credentials: <strong>tomcat:s3cret</strong></p>
+
+<h2 id="exploitation"><span class="me-2">Exploitation</span><a href="#exploitation" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+
+<p>With the newly acquired credentials, we can now exploit the above-mentioned RCE vulnerability. In order to do this, you could create your own .war file and upload it manually. The official write-up explains how you can do that.</p>
+
+<p>Since there is a Metasploit module available for this step as well, we will take the easy route.</p>
+
+<p><a href="https://slv3rfx-blog-assets.b-cdn.net/htb/machines/jerry/metasploit-exploit.png" class="popup img-link  shimmer"><img src="https://slv3rfx-blog-assets.b-cdn.net/htb/machines/jerry/metasploit-exploit.png" alt="Metasploit Exploit" loading="lazy"></a></p>
+
+<blockquote class="prompt-info">
+  <p>Set the LHOST option to the IP address of your tun0 interface</p>
+</blockquote>
+
+<p>After we run this, we will get a Meterpreter shell on the target machine as the user JERRY.</p>
+
+<p>Both flags can be found in the <em>C:\Users\Administrator\Desktop\flags</em> directory.</p>
+
+<p><a href="https://slv3rfx-blog-assets.b-cdn.net/htb/machines/jerry/flags.png" class="popup img-link  shimmer"><img src="https://slv3rfx-blog-assets.b-cdn.net/htb/machines/jerry/flags.png" alt="Flags" loading="lazy"></a></p>
+
+  </div>
+
+  <div class="post-tail-wrapper text-muted">
+    <!-- categories -->
+    
+      <div class="post-meta mb-3">
+        <i class="far fa-folder-open fa-fw me-1"></i>
         
+          <a href="/categories/hackthebox/">HackTheBox</a>,
+          <a href="/categories/machines/">Machines</a>
+      </div>
+    
 
+    <!-- tags -->
+    
+      <div class="post-tags">
+        <i class="fa fa-tags fa-fw me-1"></i>
         
+          <a
+            href="/tags/windows/"
+            class="post-tag no-text-decoration"
+          >windows</a>
+        
+          <a
+            href="/tags/metasploit/"
+            class="post-tag no-text-decoration"
+          >metasploit</a>
+        
+          <a
+            href="/tags/tomcat/"
+            class="post-tag no-text-decoration"
+          >tomcat</a>
+        
+          <a
+            href="/tags/nmap/"
+            class="post-tag no-text-decoration"
+          >nmap</a>
+        
+      </div>
+    
 
-        <div class="col-md-12">
-          <div class="card-body d-flex flex-column">
-            <h1 class="card-title my-2 mt-md-0">Mastering Sequence Filtering in Python: Comprehensive Guide to Effective Filtering Techniques</h1>
+    <div
+      class="
+        post-tail-bottom
+        d-flex justify-content-between align-items-center mt-5 pb-2
+      "
+    >
+      <div class="license-wrapper">
+        
+          
 
-            <div class="card-text content mt-0 mb-3">
-              <p>
-                
+          This post is licensed under 
+        <a href="https://creativecommons.org/licenses/by/4.0/">
+          CC BY 4.0
+        </a>
+         by the author.
+        
+      </div>
 
+      <!-- Post sharing snippet -->
 
+<div class="share-wrapper d-flex align-items-center">
+  <span class="share-label text-muted">Share</span>
+  <span class="share-icons">
+    
+    
+    
 
+    
 
+      
 
-                Filtering sequences, like lists, is a common task for developers. However, the code can become verbose and challenging to read, depending on the complexity of the filtering conditions. In this arti...
-              </p>
-            </div>
-
-            <div class="post-meta flex-grow-1 d-flex align-items-end">
-              <div class="me-auto">
-                <!-- posted date -->
-                <i class="far fa-calendar fa-fw me-1"></i>
-                <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-<time
-  
-  data-ts="1689773700"
-  data-df="ll"
-  
->
-  Jul 19, 2023
-</time>
-
-
-                <!-- categories -->
-                
-                  <i class="far fa-folder-open fa-fw me-1"></i>
-                  <span class="categories">
-                    
-                      Programming
-                  </span>
-                
-              </div>
-
-              
-            </div>
-            <!-- .post-meta -->
-          </div>
-          <!-- .card-body -->
-        </div>
+      <a href="https://twitter.com/intent/tweet?text=HackTheBox:%20Jerry%20Write-Up%20-%20slv3rfx&url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2Fhtb-jerry-writeup%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter" aria-label="Twitter">
+        <i class="fa-fw fa-brands fa-square-x-twitter"></i>
       </a>
-    </article>
-  
+    
+
+      
+
+      <a href="https://www.facebook.com/sharer/sharer.php?title=HackTheBox:%20Jerry%20Write-Up%20-%20slv3rfx&u=http%3A%2F%2Flocalhost%3A4000%2Fposts%2Fhtb-jerry-writeup%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook" aria-label="Facebook">
+        <i class="fa-fw fab fa-facebook-square"></i>
+      </a>
+    
+
+      
+
+      <a href="https://t.me/share/url?url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2Fhtb-jerry-writeup%2F&text=HackTheBox:%20Jerry%20Write-Up%20-%20slv3rfx" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Telegram" aria-label="Telegram">
+        <i class="fa-fw fab fa-telegram"></i>
+      </a>
+    
+
+      
+
+      <a href="https://www.linkedin.com/sharing/share-offsite/?url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2Fhtb-jerry-writeup%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Linkedin" aria-label="Linkedin">
+        <i class="fa-fw fab fa-linkedin"></i>
+      </a>
+    
+
+    <button
+      id="copy-link"
+      aria-label="Copy link"
+      class="btn small"
+      data-bs-toggle="tooltip"
+      data-bs-placement="top"
+      title="Copy link"
+      data-title-succeed="Link copied successfully!"
+    >
+      <i class="fa-fw fas fa-link pe-none fs-6"></i>
+    </button>
+  </span>
 </div>
-<!-- #post-list -->
 
-
+    </div>
+    <!-- .post-tail-bottom -->
+  </div>
+  <!-- div.post-tail-wrapper -->
+</article>
 
 
             
@@ -952,12 +1447,150 @@
             </div>
 
             
+              
+              
+
+
+
+  <section id="toc-wrapper" class="ps-0 pe-4">
+    <h2 class="panel-heading ps-3 pt-2 mb-2">Contents</h2>
+    <nav id="toc"></nav>
+  </section>
+
+
+            
           </aside>
         </div>
 
         <div class="row">
           <!-- tail -->
           <div id="tail-wrapper" class="col-12 col-lg-11 col-xl-9 px-md-4">
+            
+              
+              <!-- Recommend the other 3 posts according to the tags and categories of the current post. -->
+
+<!-- The total size of related posts -->
+
+
+<!-- An random integer that bigger than 0 -->
+
+
+<!-- Equals to TAG_SCORE / {max_categories_hierarchy} -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  <aside id="related-posts" aria-labelledby="related-label">
+    <h3 class="mb-4" id="related-label">Further Reading</h3>
+    <nav class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4 mb-4">
+      
+        <article class="col">
+          <a href="/posts/htb-lame-writeup/" class="post-preview card h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1699626900"
+  data-df="ll"
+  
+>
+  Nov 10, 2023
+</time>
+
+              <h4 class="pt-0 my-2">HackTheBox: Lame Write-Up</h4>
+              <div class="text-muted">
+                <p>
+                  
+
+
+
+
+
+                  As I am still new in the world of cybersecurity and penetration testing, I want to document my progress on my learning. I will be starting with this write-up of the Lame machine on HackTheBox, show...
+                </p>
+              </div>
+            </div>
+          </a>
+        </article>
+      
+    </nav>
+  </aside>
+  <!-- #related-posts -->
+
+
+            
+              
+              <!-- Navigation buttons at the bottom of the post. -->
+
+<nav class="post-navigation d-flex justify-content-between" aria-label="Post Navigation">
+  
+  
+
+  
+    <a
+      href="/posts/htb-lame-writeup/"
+      class="btn btn-outline-primary"
+      aria-label="Older"
+    >
+      <p>HackTheBox: Lame Write-Up</p>
+    </a>
+  
+
+  
+    <div class="btn btn-outline-primary disabled" aria-label="Newer">
+      <p>-</p>
+    </div>
+  
+</nav>
+
+            
+              
+              <!--  The comments switcher -->
+
+
             
 
             <!-- The Footer -->
@@ -1237,6 +1870,9 @@
   
 
   
+    <!-- image lazy-loading & popup & clipboard -->
+    
+  
 
 
 
@@ -1308,16 +1944,37 @@
 
   
 
+  
+    
+
+    
+
+  
+
+  
+    
+
+    
+
+  
+
+  
+    
+
+    
+
+  
 
 
-  <script src="https://cdn.jsdelivr.net/combine/npm/jquery@3.7.1/dist/jquery.min.js,npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js,npm/simple-jekyll-search@1.10.0/dest/simple-jekyll-search.min.js,npm/loading-attribute-polyfill@2.1.1/dist/loading-attribute-polyfill.umd.min.js,npm/dayjs@1.11.10/dayjs.min.js,npm/dayjs@1.11.10/locale/en.min.js,npm/dayjs@1.11.10/plugin/relativeTime.min.js,npm/dayjs@1.11.10/plugin/localizedFormat.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/combine/npm/jquery@3.7.1/dist/jquery.min.js,npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js,npm/simple-jekyll-search@1.10.0/dest/simple-jekyll-search.min.js,npm/loading-attribute-polyfill@2.1.1/dist/loading-attribute-polyfill.umd.min.js,npm/magnific-popup@1.1.0/dist/jquery.magnific-popup.min.js,npm/clipboard@2.0.11/dist/clipboard.min.js,npm/dayjs@1.11.10/dayjs.min.js,npm/dayjs@1.11.10/locale/en.min.js,npm/dayjs@1.11.10/plugin/relativeTime.min.js,npm/dayjs@1.11.10/plugin/localizedFormat.min.js,npm/tocbot@4.21.3/dist/tocbot.min.js"></script>
 
 
 
 
 
 
-<script defer src="/assets/js/dist/home.min.js"></script>
+<script defer src="/assets/js/dist/post.min.js"></script>
 
 
 
