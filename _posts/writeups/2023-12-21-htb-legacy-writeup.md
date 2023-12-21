@@ -51,11 +51,16 @@ We can see that this host is very likely running Windows XP and SMBv1. This make
 
 I decided to open Metasploit and choose the module for the well-known [EternalChampion](https://www.exploit-db.com/exploits/43970) exploit.
 
+Module: **exploit/windows/smb/ms17_010_psexec**
+
 ![Metasploit Options](/msf-options.png)
 
-After executing it without authentication, I successfully got a reverse shell as Administrator back.
+After running the module without authentication, I successfully got a root reverse shell back.
 
 ![Metasploit Reverse Shell](/msf-reverse-shell.png)
+
+> The module **exploit/windows/smb/ms08_067_netapi** works just as well.
+{: .prompt-info}
 
 The flags are in the following directories:
 - User: C:\Documents and Settings\john\Desktop\user.txt
