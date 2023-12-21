@@ -45,7 +45,11 @@ Service detection performed. Please report any incorrect results at https://nmap
 # Nmap done at Thu Dec 21 15:15:25 2023 -- 1 IP address (1 host up) scanned in 46.25 seconds
 ```
 
-We can see that this host is very likely running Windows XP and SMBv1. This makes it very vulnerable to many known exploits. I decided to open Metasploit and choose the module for the well-known [EternalChampion](https://www.exploit-db.com/exploits/43970) exploit.
+We can see that this host is very likely running Windows XP and SMBv1. This makes it very vulnerable to many known exploits. 
+
+## Exploitation
+
+I decided to open Metasploit and choose the module for the well-known [EternalChampion](https://www.exploit-db.com/exploits/43970) exploit.
 
 ![Metasploit Options](/msf-options.png)
 
