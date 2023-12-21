@@ -63,5 +63,5 @@ After running the module without authentication, I successfully got a root rever
 {: .prompt-info}
 
 The flags are in the following directories:
-- User: C:\Documents and Settings\john\Desktop\user.txt
-- Root: C:\Documents and Settings\Administrator\Desktop\root.txt
+- C:\Documents and Settings\john\Desktop\user.txt
+- C:\Documents and Settings\Administrator\Desktop\root.txt
