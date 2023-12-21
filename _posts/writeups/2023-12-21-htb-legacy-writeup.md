@@ -58,5 +58,5 @@ After executing it without authentication, I successfully got a reverse shell as
 ![Metasploit Reverse Shell](/msf-reverse-shell.png)
 
 The flags are in the following directories:
-- User: C:\Documents and Settings\john\Desktop
-- Root: C:\Documents and Settings\Administrator\Desktop
+- User: C:\Documents and Settings\john\Desktop\user.txt
+- Root: C:\Documents and Settings\Administrator\Desktop\root.txt
