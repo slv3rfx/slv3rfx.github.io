@@ -2,7 +2,7 @@
 title: "Hack The Box: Legacy Write-Up"
 date: 2023-12-21 21:43
 categories: [Write-ups]
-tags: [htb, lab, windows, metasploit, nmap]
+tags: [htb, lab, windows, metasploit, nmap, smb]
 img_path: /htb/machines/legacy/
 ---
 
