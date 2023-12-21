@@ -1,8 +1,8 @@
 ---
 title: "Hack The Box: Lame Write-Up"
 date: 2023-11-10 15:35
-categories: [Hack The Box, Machines]
-tags: [windows, smb, metasploit, nmap]
+categories: [Write-ups]
+tags: [htb, lab, windows, smb, metasploit, nmap]
 img_path: /htb/machines/lame/
 ---
 

@@ -1,8 +1,8 @@
 ---
 title: "Hack The Box: Jerry Write-Up"
 date: 2023-11-12 12:55
-categories: [Hack The Box, Machines]
-tags: [windows, metasploit, tomcat, nmap]
+categories: [Write-ups]
+tags: [htb, lab, windows, metasploit, tomcat, nmap]
 img_path: /htb/machines/jerry/
 ---
 
