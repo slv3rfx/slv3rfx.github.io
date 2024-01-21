@@ -2,7 +2,7 @@
 title: "Hack The Box: Sau Write-Up"
 date: 2024-01-21 14:00
 categories: [Write-ups]
-tags: [htb, lab, windows, smb, metasploit, nmap]
+tags: [htb, lab, nmap, ssrf, command injection]
 img_path: /htb/machines/sau/
 ---
 
